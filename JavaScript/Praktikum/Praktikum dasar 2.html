@@ -1,0 +1,45 @@
+<html>
+    <head>
+        
+        <title>Tugas Praktikum 2</title>
+    </head>
+    <script language="JavaScript">
+        function tambah () {
+            var bil1 = parseFloat(document.calculator.bil1.value);
+            var bil2 = parseFloat(document.calculator.bil2.value);
+            var hasil = bil1+bil2;
+            document.calculator.hasil.value=hasil;
+        }
+        function kurang () {
+            var bil1 = parseFloat(document.calculator.bil1.value);
+            var bil2 = parseFloat(document.calculator.bil2.value);
+            var hasil = bil1-bil2;
+            document.calculator.hasil.value=hasil;
+        }
+        function kali () {
+            var bil1 = parseFloat(document.calculator.bil1.value);
+            var bil2 = parseFloat(document.calculator.bil2.value);
+            var hasil = bil1*bil2;
+            document.calculator.hasil.value=hasil;
+        }
+        function bagi () {
+            var bil1 = parseFloat(document.calculator.bil1.value);
+            var bil2 = parseFloat(document.calculator.bil2.value);
+            var hasil = bil1/bil2;
+            document.calculator.hasil.value=hasil;
+        }
+    </script>
+    <body>
+        <form name="calculator">
+            <h3>Kalkulator Sederhana</h3>
+            <p>Bil 1 <input type="text" name="bil1" size="20"> <br></p> 
+            <p>Bil 2 <input type="text" name="bil2" size="20"> <br></p>           
+            <p>Hasil <input type="text" name="hasil" size="20"></p>
+
+            <p><input class="tombol" type="button" value="+" onclick=tambah()>
+            <input type="button" value="-" onclick=kurang()>
+            <input type="button" value="x" onclick=kali()>
+            <input type="button" value="/" onclick=bagi()></p>
+        </form>
+    </body>
+</html>
